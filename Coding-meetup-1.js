@@ -13,3 +13,9 @@ Notes:
 
 // Solution
 
+function countDevelopers(list) {
+  return list.reduce((count, dev) =>
+    (dev.continent === 'Europe' && dev.language === 'JavaScript')
+      ? count + 1 : count
+    , 0);
+}
